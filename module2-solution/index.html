@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align:center;
+  font-size: 175%;
+}
+
+.divcss{
+
+  border: 1px solid black;
+  background-color: #24b4a4;
+  width: 90%;
+  height: 150px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items : center;
+}
+#p1{
+  border: 1px solid black;
+  background-color: #00008B;
+  height: 30px;
+  width: 100px;
+  font-family: serif;
+  text-align:center;
+  color: #FFDF00;
+  float: right;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  font-size: 125%;
+  line-height:27px;
+}
+.p2 {
+  clear: both;
+  font-family: Helvetica;
+  color: #00008B;
+  margin-top: 0.5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  vertical-align: middle;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 31.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 98%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6  divcss">
+      <p id="p1">Pani Puri</p>
+      <p class="p2 ">Round or ball-shaped, hollow puri (a deep-fried crisp flatbread), filled with a mixture of flavored water (known as imli pani), tamarind chutney, chili powder, chaat masala, potato mash, onion or chickpeas.</p> 
+  </div>
+  <div class="col-lg-4 col-md-6  divcss">
+      <p id="p1">Vada Pav</p>
+      <p class="p2 ">Deep fried potato dumpling placed inside a bread bun (pav) sliced almost in half through the middle. It is generally accompanied with one or more chutneys and a green chili pepper.</p>
+  </div>
+  <div class="col-lg-4 col-md-12  divcss">
+      <p id="p1">Samosa</p>
+      <p class="p2 ">The triangular shaped flaky pastry with a savory filling, including ingredients such as spiced potatoes, onions, peas, chicken and/or other meats.</p>
+  </div>
+</div>
+
+</body>
+</html>
